@@ -6,6 +6,25 @@
     <title>Night - Universal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            event.preventDefault();
+        });
+    
+        document.addEventListener('mousedown', function(event) {
+            if (event.button === 0) {
+                event.preventDefault();
+            }
+        });
+    
+        document.addEventListener('selectstart', function(event) {
+            event.preventDefault();
+        });
+    
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>   
     <style>
         :root {
             --flow-dark: #7B3FE4;
@@ -150,8 +169,6 @@
             50% { transform: scale(1.5); opacity: 0.1; }
             100% { transform: scale(1); opacity: 0.3; }
         }
-
-        
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -235,9 +252,7 @@
     </style>
 </head>
 <body>
-    <div class="animated-bg"></div>
-    
-    
+    <div class="animated-bg"></div> 
     <nav class="navbar">
         <div class="logo">
             <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="https://cdn.discordapp.com/icons/1302625079661821963/ec3d0869879f902c69ac227e15dd0be2.png?size=1024">
@@ -253,9 +268,7 @@
             <a href="#team">Team</a>
         </div>
         <button class="download-btn">Purchase</button>
-    </nav>
-    
-    
+    </nav>  
     <section class="min-h-screen flex items-center justify-center text-center px-4">
         <div class="max-w-4xl">
             <h1 class="text-6xl font-bold mb-6">
@@ -272,7 +285,6 @@
             </a>
         </div>
     </section>
-  
     <section id="about" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
@@ -299,7 +311,6 @@
             </div>
         </div>
     </section>
-
     <section id="features" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">
@@ -330,7 +341,6 @@
             </div>
         </div>
     </section>
-
     <section id="games" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">
@@ -387,8 +397,6 @@
             </div>
         </div>
     </section>
-
-
     <section id="aboutme" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
@@ -404,9 +412,6 @@
                     <h3 class="text-xl font-semibold mb-3">Find Me Online</h3>
                     <ul class="space-y-4 text-gray-400">
                         <li>
-                            <a href="https://github.com/Aviorety-122" target="_blank" class="text-flow-cyan hover:text-white">GitHub</a>
-                        </li>
-                        <li>
                             <a href="https://discord.com/users/1057725189787500714" target="_blank" class="text-flow-cyan hover:text-white">Discord</a>
                         </li>
                         <li>
@@ -414,8 +419,6 @@
                         </li>
                     </ul>
                 </div>
-                
-            
                 <div class="feature-card p-6 rounded-xl">
                     <h3 class="text-xl font-semibold mb-3">My Journey</h3>
                     <div class="relative">
@@ -428,7 +431,6 @@
             </div>
         </div>
     </section>
-
     <section id="team" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">
@@ -492,7 +494,6 @@
             </div>
         </div>
     </section>
-    
     <footer class="py-8 px-4 border-t border-gray-800">
         <div class="max-w-6xl mx-auto text-center">
             <div class="flex items-center justify-center gap-2 mb-4">
@@ -507,7 +508,7 @@
     <footer class="py-8 px-4 border-t border-black-800 bg-black">
         <div class="max-w-6xl mx-auto text-center">
             <div class="flex items-center justify-center gap-2 mb-4">
-                <span class="text-xl font-bold gradient-text">The Continued Wait For Big Update In Site...</span>
+                <span class="text-xl font-bold gradient-text">The Continued.Wait For Big Update In Site...</span>
             </div>
             <div class="text-gray-400">Be Josphy</div>
             <div class="text-gray-600 text-sm mt-4">
@@ -515,8 +516,6 @@
             </div>
         </div>
     </footer>
-    
-
     <script>
         VanillaTilt.init(document.querySelectorAll(".feature-card"), {
             max: 10,
