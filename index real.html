@@ -492,6 +492,7 @@
             <a href="#features">Features</a>
             <a href="#games">Game</a>
             <a href="#team">Team</a>
+            <a href="#faq">Faq</a>
         </div>
         <button class="download-btn">Purchase</button>
         
@@ -510,7 +511,7 @@
         <a href="#features">Features</a>
         <a href="#games">Games</a>
         <a href="#team">Team</a>
-        <a href="#">Faq (soon)</a>
+        <a href="#faq">Faq</a>
         <a href="#">Discord</a>
         <div class="buttons-container">
             <button class="premium-btn">
@@ -630,9 +631,10 @@
                     <div class="text-gray-400">User Rating</div>
                 </div>
                 <div class="feature-card p-6 rounded-xl animated-card glass-effect">
-                    <div class="text-3xl font-bold text-flow-cyan">N/A</div>
+                    <div class="text-3xl font-bold text-flow-cyan" id="memberCount">Loading...</div>
                     <div class="text-gray-400">Members</div>
                 </div>
+                <script src="navbarm.js"></script>                             
             </div>
         </div>
     </section>
@@ -677,8 +679,8 @@
                 <div class="feature-card rounded-xl overflow-hidden animated-card">
                     <div class="relative">
                         <img src="https://tr.rbxcdn.com/180DAY-884ad6b7f5fb15fc118346afb8f4edd4/768/432/Image/Webp/noFilter" alt="Game" class="w-full">
-                        <span class="absolute top-4 right-4 px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">
-                            Active
+                        <span class="absolute top-300 right-4 px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">
+                            Down
                         </span>
                     </div>
                     <div class="p-6">
@@ -700,7 +702,7 @@
                 <div class="feature-card rounded-xl overflow-hidden animated-card">
                     <div class="relative">
                         <img src="https://tr.rbxcdn.com/180DAY-994b7ceb365a8e648465ecd4fd955f20/768/432/Image/Webp/noFilter" alt="Game" class="w-full">
-                        <span class="absolute top-4 right-4 px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">
+                        <span class="absolute top-300 right-4 px-3 py-1 bg-red-500/20 text-green-400 rounded-full text-sm">
                             Active
                         </span>
                     </div>
@@ -712,7 +714,6 @@
                             <div class="text-flow-cyan">5 Rating</div>
                         </div>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-flow-blue/10 text-flow-blue rounded-full text-sm">AutoClash</span>
                             <span class="px-3 py-1 bg-flow-blue/10 text-flow-blue rounded-full text-sm">AntiFling</span>
                             <span class="px-3 py-1 bg-flow-blue/10 text-flow-blue rounded-full text-sm">Godmode</span>
                             <span class="px-3 py-1 bg-flow-blue/10 text-flow-blue rounded-full text-sm">AntiFall</span>
@@ -788,6 +789,59 @@
                 </div>
             </div>
         </div>
+        <!-- FAQ Section -->
+<section id="faq" class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Frequently Asked <span class="gradient-text">Questions</span>
+        </h2>
+        <p class="text-gray-400 text-center mb-12">
+            Have questions? We've got answers! Here are some of the most common inquiries from our users.
+        </p>
+        
+        <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div class="feature-card rounded-xl p-6 animated-card glass-effect">
+                <h3 class="text-xl font-semibold mb-3">What are Night scripts?</h3>
+                <p class="text-gray-400">
+                    Night scripts are powerful, free scripts designed to enhance your Roblox gaming experience.
+                </p>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="feature-card rounded-xl p-6 animated-card glass-effect">
+                <h3 class="text-xl font-semibold mb-3">Are the scripts safe to use?</h3>
+                <p class="text-gray-400">
+                    Yes, all Night scripts are thoroughly tested for safety and effectiveness.
+                </p>
+            </div>
+            
+            <!-- FAQ Item 3 -->
+            <div class="feature-card rounded-xl p-6 animated-card glass-effect">
+                <h3 class="text-xl font-semibold mb-3">How do I execute a script from Night?</h3>
+                <p class="text-gray-400">
+                    Simply copy the script code and paste in your Roblox executor (we support all executors).
+                </p>
+            </div>
+            
+            <!-- FAQ Item 4 -->
+            <div class="feature-card rounded-xl p-6 animated-card glass-effect">
+                <h3 class="text-xl font-semibold mb-3">How can I get my access key?</h3>
+                <p class="text-gray-400">
+                    Right now Night is free you can use free version but not forgot we have premium version.
+                </p>
+            </div>
+            
+            <!-- FAQ Item 5 -->
+            <div class="feature-card rounded-xl p-6 animated-card glass-effect">
+                <h3 class="text-xl font-semibold mb-3">How can I join the Night community?</h3>
+                <p class="text-gray-400">
+                    Click on the "Join Our Community!" button on our homepage.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
         
     </section>
     <footer class="py-8 px-4 border-t border-gray-800">
